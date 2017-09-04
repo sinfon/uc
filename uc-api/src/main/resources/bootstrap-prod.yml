@@ -1,0 +1,6 @@
+ spring:
+  cloud:
+    config:
+      uri: http://sinfonia.top:20088
+      profile: prod
+      label: master
