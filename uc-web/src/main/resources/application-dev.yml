@@ -13,8 +13,14 @@ spring:
     hibernate.ddl-auto: create-drop
 
 logging:
+  path: logs
   level:
+    root: DEBUG
     org:
       springframework:
+        web: DEBUG
         data: DEBUG
+  pattern:
+    console: %d{yyyy/MM/dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n
+    file: %d{yyyy/MM/dd-HH:mm} [%thread] %-5level %logger- %msg%n
 
